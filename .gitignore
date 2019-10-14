@@ -1,1 +1,4 @@
 venv
+
+wp
+!wp/.gitkeep
