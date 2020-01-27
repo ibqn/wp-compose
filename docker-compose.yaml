@@ -17,6 +17,8 @@ services:
   # Wordpress
   wordpress:
     image: wordpress:php7.4-fpm-alpine
+    # run container as user
+    user: "${UID}:${GID}"
     ports:
       - 9000:9000
     restart: always

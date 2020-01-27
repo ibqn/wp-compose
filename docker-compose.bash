@@ -4,4 +4,4 @@ set -e
 
 source './venv/bin/activate'
 
-exec docker-compose "$@"
+exec env UID="$(id -u)" GID="$(id -g)" docker-compose "$@"
