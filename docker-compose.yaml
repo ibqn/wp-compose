@@ -17,10 +17,8 @@ services:
   # Wordpress
   wordpress:
     image: wordpress:latest
-    # run container as user
-    user: "${UID}:${GID}"
     ports:
-      - 9000:80
+      - 8000:80
     restart: always
     volumes:
       - ./wp:/var/www/html
