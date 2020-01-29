@@ -24,6 +24,7 @@ services:
     restart: always
     volumes:
       - ./wp:/var/www/html
+      - ./wp-theme:/var/www/html/wp-content/themes/wp-theme
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
