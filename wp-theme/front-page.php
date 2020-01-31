@@ -7,10 +7,16 @@
     <title>Front page</title>
 </head>
 <body>
-<?php
 
-    echo('front page');
+    <?php get_header(); ?>
 
-?>
+    <br/>
+
+    <?php echo('front page'); ?>
+
+    <br/>
+
+    <?php get_footer(); ?>
+
 </body>
 </html>
