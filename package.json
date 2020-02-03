@@ -3,6 +3,7 @@
     "start": "browser-sync start --proxy 'http://localhost:8000' --files 'wp-theme'"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "bootstrap": "^4.4.1"
   }
 }
