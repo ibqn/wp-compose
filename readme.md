@@ -1,3 +1,17 @@
+## Getting started
+
+Create an environment with the latest `docker-compose` version
+
+```bash
+bash prepare.bash
+```
+
+Pull the latest images by running
+
+```shell
+bash docker-compose.bash pull
+```
+
 ## Build the project
 
 Now, run `docker-compose up -d` from your project directory.
@@ -16,4 +30,4 @@ The command `docker-compose down --volumes` removes the containers, default netw
 
 ## More info
 
- - [Quickstart: Compose and WordPress](https://docs.docker.com/compose/wordpress/)
+-   [Quickstart: Compose and WordPress](https://docs.docker.com/compose/wordpress/)
