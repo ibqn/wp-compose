@@ -1,13 +1,12 @@
-version: '3.7'
+version: "3.8"
 
 services:
   # Database
   db:
-    image: mysql:latest # last known working version is 8
+    image: mariadb:latest
     volumes:
       - db_data:/var/lib/mysql
     restart: always
-    command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: wordpress
@@ -24,7 +23,6 @@ services:
     restart: always
     volumes:
       - ./wp:/var/www/html
-      # - ./wp-theme:/var/www/html/wp-content/themes/wp-theme
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
