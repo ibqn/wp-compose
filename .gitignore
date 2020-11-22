@@ -1,5 +1,9 @@
 venv
 
-wp
+wp/*
 !wp/.gitkeep
+
+wp-theme/*
+!wp-theme/.gitkeep
+
 node_modules
